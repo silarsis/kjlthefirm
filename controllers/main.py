@@ -32,7 +32,8 @@ class OurRequestHandler(webapp.RequestHandler):
         """
         Render the appropriate template with args
         """
-        templateName = os.path.join('t', templateName)
+        path = os.path.dirname(__file__)
+        templateName = os.path.join(path, '..', 't', templateName)
         return self.response.out.write(template.render(templateName, self.args))
 
 class MainPage(OurRequestHandler):

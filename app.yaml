@@ -4,13 +4,16 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /s/(.*)
-  static_dir: s/\1
+- url: /s
+  static_dir: s
 
 - url: /admin/(.*)
   script: admin.py
   login: admin
 
+- url: /tests
+  static_dir: tests
+
 - url: /.*
-  script: main.py
+  script: controllers/main.py
   login: required
