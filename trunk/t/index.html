@@ -1,13 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>The Firm</title>
-</head>
-
-<body>
-  Welcome, {{ user.nickname }}, to <b>The Firm</b> - watch this space.
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<p>
+Welcome to <b>The Firm</b>, {{ user.nickname }}.
+</p><p>
+This site will contain a new webgame eventually, once the developers get it
+working ;).  Feel free to return and check on progress periodically.
+</p>
+{% endblock %}
