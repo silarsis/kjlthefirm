@@ -1,0 +1,26 @@
+The Firm is a game based on running an IT company (or consulting in an IT
+environment).  This document lays out the design so far.
+
+Basic premise:
+
+Users will login and register themselves as new users.  They will be given a
+certain number of points to buy starter skills, and will then be cast into the
+market.
+
+In the market, users will be able to bid on jobs available.  Jobs will come
+from a variety of customers, and will require certain amounts of certain skills
+to complete.  The advertised amounts and skills may not match the actual
+amounts and skills.
+
+Users will be able to band together into companies, or enter into ad-hoc
+arrangements for joint bidding on particular jobs.
+
+Networking is crucial - while there will be a central marketplace, there will
+also be many jobs going that are only available if you are known to the
+customer.
+
+Finally, this is a web + email game - events will happen in realtime, on a
+1:1 time scale, and new jobs and events may be emailed to users if they elect
+to receive emails.
+
+For information on the object model to date, see elsewhere.

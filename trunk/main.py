@@ -4,21 +4,43 @@ First file for "The Firm" - a web-based game where you try and build an
 IT consulting company.
 """
 
+import os
 import wsgiref.handlers
 from google.appengine.api import users
 from google.appengine.ext import webapp
+from google.appengine.ext.webapp import template
 
-class MainPage(webapp.RequestHandler):
+# Switch this sometime, when we're done
+DEBUG = True
+
+class OurRequestHandler(webapp.RequestHandler):
+    """
+    Our version of the request handler - sets up some basic variables,
+    and handles render nicely
+    """
+    def initialize(self, request, response):
+        """
+        Setup variables on self that we're likely to want for all requests
+        """
+        webapp.RequestHandler.initialize(self, request, response)
+        self.args = {
+            'user' : users.get_current_user(),
+        }
+        
+    def render(self, templateName):
+        """
+        Render the appropriate template with args
+        """
+        templateName = os.path.join('t', templateName)
+        return self.response.out.write(template.render(templateName, self.args))
+
+class MainPage(OurRequestHandler):
     def get(self):
-        user = users.get_current_user()
-        if user:
-            self.response.headers['Content-Type'] = 'text/plain'
-            self.response.out.write('Hello %s' % user.nickname())
-        else:
-            self.redirect(users.create_login_url(self.request.uri))
+        """ Main page """
+        self.render('index.html')
 
 def main():
-    app = webapp.WSGIApplication([('/', MainPage),], debug=True)
+    app = webapp.WSGIApplication([('/', MainPage),], debug=DEBUG)
     wsgiref.handlers.CGIHandler().run(app)
 
 if __name__ == '__main__':

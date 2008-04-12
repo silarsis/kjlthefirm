@@ -1,0 +1,43 @@
+Notes on the Objects and Properties in The Firm:
+
+Company
+    - name - name of the company
+
+Person
+    - user - google user object
+    - name - their screen name
+    - company - reference to the company the user is linked to
+
+MarketPlace
+    - name - name of the marketplace
+
+Tender
+    - name - name of tender
+    - origin - reference to company putting this tender out
+    - state - one of (advertised, deciding, awarded, withdrawn)
+    - adDeadline - date at which this tender will stop being advertised
+    - decideDeadline - date at which this tender will be awarded
+    - completeDeadline - date by which this tender should be completed
+
+MarketContents
+    - market - reference to the market in question
+    - tender - reference to the tender available in this market
+
+MarketParticipants
+    - market - reference to the market in question
+    - company - reference to the company that's in this market
+
+Skill
+    - name - name of the skill
+    - category - type of skill (web, database, language, OS)
+
+PersonSkill
+    - skill - reference to the skill
+    - person - reference to the person this skill belongs to
+    - level - actual skill level of this person
+
+TenderSkill
+    - skill - reference to the skill
+    - tender - reference to the tender
+    - level - skill level required for this tender
+    - time - length of time of this skill required
