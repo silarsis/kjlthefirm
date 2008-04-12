@@ -25,6 +25,7 @@ class OurRequestHandler(webapp.RequestHandler):
         webapp.RequestHandler.initialize(self, request, response)
         self.args = {
             'user' : users.get_current_user(),
+            'request' : self.request,
         }
         
     def render(self, templateName):
