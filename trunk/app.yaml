@@ -7,6 +7,10 @@ handlers:
 - url: /s/(.*)
   static_dir: s/\1
 
+- url: /admin/(.*)
+  script: admin.py
+  login: admin
+
 - url: /.*
   script: main.py
   login: required
