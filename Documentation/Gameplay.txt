@@ -1,0 +1,89 @@
+Some notes on gameplay as I perceive it so far:
+
+Firstly, new users will have to register and create a company.  Everything's
+done through a company - starting users will have a company of their own
+that they do business through.  Let's make this sign-up process look a bit
+like registering with a central "ASIC"-style organisation - give them a
+business number, have them pick a name and design a logo.
+
+New businesses will be introduced to a starter marketplace, where they will
+be able to pick up tenders that are essentially publically advertised.
+
+So, a user logs in, goes to the marketplace, and finds a tender that looks
+interesting.  They'll hit the "ask for more info" button on the tender, and
+will be sent a more detailed tender requirements document.
+
+The tender requirements will outline the skills required, amount of work
+required, and all the deadlines.  The user will look at the tender req, decide
+whether they think they can meet the requirements or not, and if so, start a
+tender response.
+
+The tender response will basically say "my company can do this job in x days
+for y dollars".
+
+Assuming the response gets in before the deadline, tender will be awarded to
+someone based on some criteria.  If our user got the job, the tender moves
+into project management.
+
+In project management, the user can view the current projects, skill level and
+time requirements, and how things are progressing.  The owner of the company
+can apply any resources the company has available in any way they see fit to
+try and meet the requirements.
+
+If the tender completes successfully, the company makes the money.  If the
+tender does not complete on time, the company will be hit with penalties on
+a per-day basis until it completes.  Job completion records will be publically
+available - when viewing a company, a record of previous successes and failures
+will be visible, and this will also be factored in when judging tender
+applications.
+
+The above covers the bare-bones basics of play.  The twists and optional
+features are listed below:
+
+* Firstly, companies will only be able to find tenders from people they've been
+introduced to.  That means that while the initial market is a good starting
+place, I expect to add other markets later.  If a company does a good job
+for a customer, that customer might introduce them to other customers, or
+to other markets.  Suggest both people and companies should have contacts,
+and can introduce them to each other, this gives the potential to carry
+contacts with you when you leave.  Up to company directors whether to share
+contacts with employees or not, perhaps?
+
+* Offers to tender may not come from the market, but may come from other
+companies (note, all customers are companies, and all companies are prospective
+customers - players can tender to other players) directly.  This makes doing
+a good job, and getting more introductions, crucial.  There will be a section
+in the company overview listing contacts.
+
+* Tender listed skill requirements and timelines are not necessarily correct
+- they are best-guess estimates from the customer.  There should be project
+management skills that, if applied, allow you to fine-tune the estimates both
+before and after winning the tender.
+
+* Player companies should be able to hire from a job pool, and players should
+be able to enter the job pool themselves.  This allows players to work for
+others, but it also allows players to hire NPC resources.
+
+* Events - NPCs and players alike will suffer events, as will companies.
+Initial thoughts for events include getting sick, leaving without notice,
+leaving with notice, demanding a payrise, learning new skills, etc.  In
+addition, companies should be able to give employees bonuses, send them on
+conferences, give them time off, etc.  Employees will have a satisfaction
+rating with their company that will be affected by all of this, and will affect
+how easy they are to poach/how likely they are to leave or make other demands
+on the company.
+
+===
+Areas of Web Interface
+===
+
+A player logs in, and gets a series of areas they can explore:
+
+* Personal Profile (including skills and satisfaction ratings, etc)
+* Company Profile (name, logo, past history, projman, contacts, employees,
+    upcoming tender info)
+* Marketplace (list of available tenders)
+* Job Pool (potential employees list and details)
+* Recent Events
+
+The company section is the largest, so this might not be the best structure
