@@ -19,8 +19,7 @@ Networking is crucial - while there will be a central marketplace, there will
 also be many jobs going that are only available if you are known to the
 customer.
 
-Finally, this is a web + email game - events will happen in realtime, on a
-1:1 time scale, and new jobs and events may be emailed to users if they elect
-to receive emails.
+Finally, this is a web + email game - events will happen over time, and new
+jobs and events may be emailed to users if they elect to receive emails.
 
 For information on the object model to date, see elsewhere.
